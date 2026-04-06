@@ -1,93 +1,213 @@
 <?php
 $projects = [
-    ["title" => "Exercice 1", "link" => "exercice1.php"],
-    ["title" => "Exercice 2", "link" => "exercice2.php"],
-    ["title" => "Rapport Exercice 1", "link" => "Rapport Exercice1.pdf"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf"]
+    ["title" => "Exercice 1", "link" => "exercice1.php", "type" => "code", "atelier" => "1"],
+    ["title" => "Rapport Exercice 1", "link" => "Rapport Exercice1.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Exercice 2", "link" => "exercice2.php", "type" => "code", "atelier" => "1"],
+    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    
+    ["title" => "Exercice 3", "link" => "exercice3.php", "type" => "code", "atelier" => "2"],
+    ["title" => "Rapport Exercice 3", "link" => "Rapport Exercice3.pdf", "type" => "pdf", "atelier" => "2"],
+    ["title" => "Exercice 4", "link" => "exercice4.php", "type" => "code", "atelier" => "2"],
+    ["title" => "Rapport Exercice 4", "link" => "Rapport Exercice4.pdf", "type" => "pdf", "atelier" => "2"]
 ];
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio Aya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aya | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #5d4037; /* Deep Brown */
+            --accent: #8d6e63;
+            --bg: #faf9f6; /* Soft Off-White */
+            --card-bg: #ffffff;
+            --text: #2d2d2d;
+        }
 
-<style>
-body{
-    margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(120deg,#f5f5dc,#ffffff);
-}
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
 
-/* HEADER */
-header{
-    text-align:center;
-    padding:40px;
-}
-header h1{
-    margin:0;
-    color:#5d4037;
-    font-size:40px;
-}
-header p{
-    color:#8d6e63;
-    font-size:18px;
-}
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
 
-/* GRID */
-.container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:40px;
-}
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
 
-/* CARD */
-.card{
-    background:white;
-    border-radius:15px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-.card:hover{
-    transform:translateY(-10px);
-}
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 300;
+        }
 
-/* BUTTON */
-.card a{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 20px;
-    text-decoration:none;
-    color:white;
-    background:#5d4037;
-    border-radius:20px;
-    transition:0.3s;
-}
-.card a:hover{
-    background:#8d6e63;
-}
-</style>
+        /* FILTER BUTTONS */
+        .filters {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .filter-btn {
+            background: none;
+            border: 1px solid #ddd;
+            padding: 10px 25px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 30px;
+            font-family: 'Inter', sans-serif;
+            transition: 0.3s all ease;
+            color: var(--text);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(93, 64, 55, 0.2);
+        }
+
+        /* GRID SYSTEM */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 40px 80px;
+        }
+
+        /* CARD DESIGN */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.02);
+            display: block; /* Hidden by default via JS if needed */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* BUTTONS INSIDE CARDS */
+        .card a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 12px 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .btn-code {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-pdf {
+            background: #f0f0f0;
+            color: var(--primary);
+            margin-left: 5px;
+        }
+
+        .card a:hover {
+            opacity: 0.9;
+            letter-spacing: 0.5px;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
     <h1>Aya Portfolio</h1>
-    <p>Full Stack Developer</p>
+    <p>IT Student & Developer</p>
 </header>
 
-<div class="container">
-<?php foreach($projects as $project): ?>
-    <div class="card">
-        <h3><?php echo $project['title']; ?></h3>
-        <a href="<?php echo $project['link']; ?>">Voir Projet</a>
-    </div>
-<?php endforeach; ?>
+<div class="filters">
+    <button class="filter-btn active" onclick="filterAtelier('all')">Tout</button>
+    <button class="filter-btn" onclick="filterAtelier('1')">Atelier 1</button>
+    <button class="filter-btn" onclick="filterAtelier('2')">Atelier 2</button>
 </div>
+
+<div class="container" id="projectGrid">
+    <?php foreach($projects as $project): ?>
+        <div class="card project-card fade-in" data-atelier="<?php echo $project['atelier']; ?>">
+            <h3><?php echo htmlspecialchars($project['title']); ?></h3>
+            <a href="<?php echo $project['link']; ?>" 
+               class="<?php echo ($project['type'] === 'pdf') ? 'btn-pdf' : 'btn-code'; ?>"
+               <?php echo ($project['type'] === 'pdf') ? 'target="_blank"' : ''; ?>>
+               <?php echo ($project['type'] === 'pdf') ? '📄 Lire le Rapport' : '💻 Voir l\'exercice'; ?>
+            </a>
+        </div>
+    <?php endforeach; ?>
+</div>
+
+<script>
+    function filterAtelier(atelier) {
+        const cards = document.querySelectorAll('.project-card');
+        const buttons = document.querySelectorAll('.filter-btn');
+
+        // Update active button
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+            if(btn.innerText.includes(atelier) || (atelier === 'all' && btn.innerText === 'Tout')) {
+                btn.classList.add('active');
+            }
+        });
+
+        // Filter cards
+        cards.forEach(card => {
+            card.style.display = 'none'; // Hide all
+            if (atelier === 'all' || card.getAttribute('data-atelier') === atelier) {
+                card.style.display = 'block'; // Show matched
+                card.classList.remove('fade-in');
+                void card.offsetWidth; // Trigger reflow for animation
+                card.classList.add('fade-in');
+            }
+        });
+    }
+</script>
 
 </body>
 </html>
