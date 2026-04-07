@@ -247,7 +247,7 @@ $projects = [
 
 <header>
     <h1>Aya Portfolio</h1>
-    <img src="https://postimg.cc/8JTgBKYm.jpg" width="150">
+    <img src="profile.png" alt="Aya" class="profile-img">
     <p>IT Student & Developer</p>
     <p></p>
 </header>
