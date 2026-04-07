@@ -18,8 +18,7 @@ $projects = [
     ["title" => "Rapport TD4", "link" => "Rapport TD4.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD5", "link" => "td5_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD5", "link" => "Rapport TD5.pdf", "type" => "pdf", "atelier" =>="1"],
-
+    ["title" => "Rapport TD5", "link" => "Rapport TD5.pdf", "type" => "pdf", "atelier" => "1"],
     ["title" => "TD6", "link" => "td6_Atelier1.php", "type" => "code", "atelier" => "1"],
     ["title" => "Rapport TD6", "link" => "Rapport TD6.pdf", "type" => "pdf", "atelier" => "1"],
 
