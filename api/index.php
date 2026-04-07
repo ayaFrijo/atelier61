@@ -6,44 +6,43 @@ $projects = [
     ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD1", "link" => "td1_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD1", "link" => "Rapport TD1.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD2", "link" => "td2_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD2", "link" => "Rapport TD2.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD3", "link" => "td3_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD3", "link" => "Rapport TD3.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD4", "link" => "td4_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD4", "link" => "Rapport TD4.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD5", "link" => "td5_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD5", "link" => "Rapport TD5.pdf", "type" => "pdf", "atelier" =>="1"],
 
     ["title" => "TD6", "link" => "td6_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD6", "link" => "Rapport TD6.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD7", "link" => "td7_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD7", "link" => "Rapport TD7.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD8", "link" => "td8_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD8", "link" => "Rapport TD8.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD9", "link" => "td9_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD9", "link" => "Rapport TD9.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD10", "link" => "td10_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
-    
+    ["title" => "Rapport TD10", "link" => "Rapport TD10.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD11", "link" => "td11_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD11", "link" => "Rapport TD11.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD12", "link" => "td12_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD12", "link" => "Rapport TD12.pdf", "type" => "pdf", "atelier" => "1"],
 
     ["title" => "TD13", "link" => "td13_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+    ["title" => "Rapport TD13", "link" => "Rapport TD13.pdf", "type" => "pdf", "atelier" => "1"],
 
    
     
