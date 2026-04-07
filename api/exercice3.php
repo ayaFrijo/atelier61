@@ -13,10 +13,6 @@ Prénom : <input type="text" name="prenom"><br>
 <input type="submit" value="Valider"> 
 </form> 
 
-<?php 
-$nom = $_POST["nom"]; 
-$prenom = $_POST["prenom"]; 
-echo "Bienvenue " . $nom . " " . $prenom; 
-?> 
+
 </body>
 </html>
