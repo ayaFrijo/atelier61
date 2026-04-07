@@ -228,12 +228,12 @@ $projects = [
 }
 
 .whatsapp {
-    background: #25D366;
+    background: #5d4037;
     color: white;
 }
 
 .gmail {
-    background: #ea4335;
+    background: #5d4037;
     color: white;
 }
 
@@ -247,7 +247,7 @@ $projects = [
 
 <header>
     <h1>Aya Portfolio</h1>
-    <img src="profile.png" alt="Aya" class="profile-img">
+    <img src="/profile.png" alt="Aya" class="profile-img">
     <p>IT Student & Developer</p>
     <p></p>
 </header>
