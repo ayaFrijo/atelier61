@@ -196,13 +196,60 @@ $projects = [
         .fade-in {
             animation: fadeIn 0.5s ease forwards;
         }
+        .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+    border: 3px solid var(--primary);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.gmail {
+    background: #ea4335;
+    color: white;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
     </style>
 </head>
 <body>
 
 <header>
     <h1>Aya Portfolio</h1>
+    <img src="profile.jpg" alt="Aya" class="profile-img">
     <p>IT Student & Developer</p>
+    <p></p>
 </header>
 
 <div class="filters">
@@ -223,6 +270,20 @@ $projects = [
         </div>
     <?php endforeach; ?>
 </div>
+
+<div class="contact">
+    <h2>Contact Me</h2>
+    
+    <a href="https://wa.me/212716470232" target="_blank" class="contact-btn whatsapp">
+        💬 WhatsApp
+    </a>
+
+    <a href="mailto:yoyoaya56367@gmail.com" class="contact-btn gmail">
+        📧 Gmail
+    </a>
+</div>
+
+
 
 <script>
     function filterAtelier(atelier) {
