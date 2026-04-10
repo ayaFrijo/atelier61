@@ -51,7 +51,10 @@ $projects = [
     ["title" => "Rapport Exercice 4", "link" => "Rapport Exercice4.pdf", "type" => "pdf", "atelier" => "2"],
     
     ["title" => "Exercice 5", "link" => "exercice5.php", "type" => "code", "atelier" => "2"],
-    ["title" => "Rapport Exercice 5", "link" => "Rapport Exercice5.pdf", "type" => "pdf", "atelier" => "2"]
+    ["title" => "Rapport Exercice 5", "link" => "Rapport Exercice5.pdf", "type" => "pdf", "atelier" => "2"],
+
+    ["title" => "Exercice 6", "link" => "exercice6.php", "type" => "code", "atelier" => "2"],
+    ["title" => "Rapport Exercice 6", "link" => "Rapport Exercice6.pdf", "type" => "pdf", "atelier" => "2"]
 ];
 ?>
 
