@@ -207,6 +207,55 @@ $projects = [
     border: 3px solid var(--primary);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+.skills {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.skills h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(var(--primary) 0deg, #eee 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.circle span {
+    position: absolute;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.circle::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
 
 .contact {
     text-align: center;
@@ -272,6 +321,54 @@ $projects = [
         </div>
     <?php endforeach; ?>
 </div>
+<section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+
+        <div class="skill">
+            <div class="circle" data-percent="98">
+                <span>98%</span>
+            </div>
+            <p>HTML</p>
+        </div>
+
+        <div class="skill">
+            <div class="circle" data-percent="75">
+                <span>75%</span>
+            </div>
+            <p>CSS</p>
+        </div>
+
+        <div class="skill">
+            <div class="circle" data-percent="67">
+                <span>67%</span>
+            </div>
+            <p>Bootstrap</p>
+        </div>
+
+        <div class="skill">
+            <div class="circle" data-percent="45">
+                <span>45%</span>
+            </div>
+            <p>JavaScript</p>
+        </div>
+
+        <div class="skill">
+            <div class="circle" data-percent="30">
+                <span>30%</span>
+            </div>
+            <p>PHP</p>
+        </div>
+
+        <div class="skill">
+            <div class="circle" data-percent="69">
+                <span>69%</span>
+            </div>
+            <p>Python</p>
+        </div>
+
+    </div>
+</section>
 
 <div class="contact">
     <h2>Contact Me</h2>
@@ -310,6 +407,13 @@ $projects = [
                 card.classList.add('fade-in');
             }
         });
+        // Skills circle animation
+document.querySelectorAll('.circle').forEach(circle => {
+    let percent = circle.getAttribute('data-percent');
+    let degree = (percent / 100) * 360;
+    circle.style.background = `conic-gradient(#5d4037 ${degree}deg, #eee ${degree}deg)`;
+});
+
     }
 </script>
 
