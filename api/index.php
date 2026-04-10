@@ -43,13 +43,13 @@ $projects = [
     ["title" => "TD13", "link" => "td13_Atelier1.php", "type" => "code", "atelier" => "1"],
     ["title" => "Rapport TD13", "link" => "Rapport TD13.pdf", "type" => "pdf", "atelier" => "1"],
 
-   
-    
     
     ["title" => "Exercice 3", "link" => "exercice3.php", "type" => "code", "atelier" => "2"],
     ["title" => "Rapport Exercice 3", "link" => "Rapport Exercice3.pdf", "type" => "pdf", "atelier" => "2"],
+
     ["title" => "Exercice 4", "link" => "exercice4.php", "type" => "code", "atelier" => "2"],
-    ["title" => "Rapport Exercice 4", "link" => "Rapport Exercice4.pdf", "type" => "pdf", "atelier" => "2"]
+    ["title" => "Rapport Exercice 4", "link" => "Rapport Exercice4.pdf", "type" => "pdf", "atelier" => "2"],
+    
     ["title" => "Exercice 5", "link" => "exercice5.php", "type" => "code", "atelier" => "2"],
     ["title" => "Rapport Exercice 5", "link" => "Rapport Exercice5.pdf", "type" => "pdf", "atelier" => "2"]
 ];
@@ -408,13 +408,13 @@ $projects = [
             }
         });
         // Skills circle animation
-document.querySelectorAll('.circle').forEach(circle => {
+
+    }
+    document.querySelectorAll('.circle').forEach(circle => {
     let percent = circle.getAttribute('data-percent');
     let degree = (percent / 100) * 360;
     circle.style.background = `conic-gradient(#5d4037 ${degree}deg, #eee ${degree}deg)`;
 });
-
-    }
 </script>
 
 </body>
