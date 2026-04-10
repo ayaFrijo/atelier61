@@ -300,7 +300,7 @@ $projects = [
     <h1>Aya Portfolio</h1>
     <img src="/profile.png" alt="Aya" class="profile-img">
     <p>IT Student & Developer</p>
-    <p></p>
+    
 </header>
 
 <div class="filters">
