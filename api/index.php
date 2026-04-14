@@ -190,7 +190,7 @@ $skills = [
 
         /* Footer & Contact */
         .contact { text-align: center; }
-        .social-icons img { width: 35px; margin: 10px; filter: invert(1); }
+        .social-icons img { width: 35px; margin: 10px; }
     </style>
 </head>
 <body>
@@ -214,7 +214,7 @@ $skills = [
             <button class="btn-primary" onclick="revealProjects()" id="btn-view">View my projects</button>
         </div>
         <div class="hero-image">
-            <img src="your-photo.jpg" alt="Aya Frijo" style="width: 320px; border-radius: 20px;">
+            <img src="profile.png" alt="Aya Frijo" style="width: 320px; border-radius: 20px;">
         </div>
     </section>
 
