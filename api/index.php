@@ -1,60 +1,30 @@
 <?php
-$projects = [
-    ["title" => "Exercice 1", "link" => "exercice1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 1", "link" => "Rapport Exercice1.pdf", "type" => "pdf", "atelier" => "1"],
-    ["title" => "Exercice 2", "link" => "exercice2.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport Exercice 2", "link" => "Rapport Exercice2.pdf", "type" => "pdf", "atelier" => "1"],
+// 1. Grouping: Koul 'item' fih l-code wel PDF dyalo
+$workshops = [
+    ["title" => "Exercice 1", "atelier" => "1", "code" => "exercice1.php", "pdf" => "Rapport Exercice1.pdf"],
+    ["title" => "Exercice 2", "atelier" => "1", "code" => "exercice2.php", "pdf" => "Rapport Exercice2.pdf"],
+    ["title" => "TD 1", "atelier" => "1", "code" => "td1_Atelier1.php", "pdf" => "Rapport TD1.pdf"],
+    ["title" => "TD 2", "atelier" => "1", "code" => "td2_Atelier1.php", "pdf" => "Rapport TD2.pdf"],
+    ["title" => "TD 3", "atelier" => "1", "code" => "td3_Atelier1.php", "pdf" => "Rapport TD3.pdf"],
+    ["title" => "TD 4", "atelier" => "1", "code" => "td4_Atelier1.php", "pdf" => "Rapport TD4.pdf"],
+    ["title" => "TD 5", "atelier" => "1", "code" => "td5_Atelier1.php", "pdf" => "Rapport TD5.pdf"],
+    ["title" => "TD 6", "atelier" => "1", "code" => "td6_Atelier1.php", "pdf" => "Rapport TD6.pdf"],
+    ["title" => "TD 7", "atelier" => "1", "code" => "td7_Atelier1.php", "pdf" => "Rapport TD7.pdf"],
+    ["title" => "TD 8", "atelier" => "1", "code" => "td8_Atelier1.php", "pdf" => "Rapport TD8.pdf"],
+    ["title" => "TD 9", "atelier" => "1", "code" => "td9_Atelier1.php", "pdf" => "Rapport TD9.pdf"],
+    ["title" => "TD 10", "atelier" => "1", "code" => "td10_Atelier1.php", "pdf" => "Rapport TD10.pdf"],
+    ["title" => "TD 11", "atelier" => "1", "code" => "td11_Atelier1.php", "pdf" => "Rapport TD11.pdf"],
+    ["title" => "TD 12", "atelier" => "1", "code" => "td12_Atelier1.php", "pdf" => "Rapport TD12.pdf"],
+    ["title" => "TD 13", "atelier" => "1", "code" => "td13_Atelier1.php", "pdf" => "Rapport TD13.pdf"],
+    ["title" => "Exercice 3", "atelier" => "2", "code" => "exercice3.php", "pdf" => "Rapport Exercice3.pdf"],
+    ["title" => "Exercice 4", "atelier" => "2", "code" => "exercice4.php", "pdf" => "Rapport Exercice4.pdf"],
+    ["title" => "Exercice 5", "atelier" => "2", "code" => "exercice5.php", "pdf" => "Rapport Exercice5.pdf"],
+    ["title" => "Exercice 6", "atelier" => "2", "code" => "exercice6.php", "pdf" => "Rapport Exercice6.pdf"]
+];
 
-    ["title" => "TD1", "link" => "td1_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD1", "link" => "Rapport TD1.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD2", "link" => "td2_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD2", "link" => "Rapport TD2.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD3", "link" => "td3_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD3", "link" => "Rapport TD3.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD4", "link" => "td4_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD4", "link" => "Rapport TD4.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD5", "link" => "td5_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD5", "link" => "Rapport TD5.pdf", "type" => "pdf", "atelier" => "1"],
-    ["title" => "TD6", "link" => "td6_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD6", "link" => "Rapport TD6.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD7", "link" => "td7_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD7", "link" => "Rapport TD7.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD8", "link" => "td8_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD8", "link" => "Rapport TD8.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD9", "link" => "td9_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD9", "link" => "Rapport TD9.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD10", "link" => "td10_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD10", "link" => "Rapport TD10.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD11", "link" => "td11_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD11", "link" => "Rapport TD11.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD12", "link" => "td12_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD12", "link" => "Rapport TD12.pdf", "type" => "pdf", "atelier" => "1"],
-
-    ["title" => "TD13", "link" => "td13_Atelier1.php", "type" => "code", "atelier" => "1"],
-    ["title" => "Rapport TD13", "link" => "Rapport TD13.pdf", "type" => "pdf", "atelier" => "1"],
-
-    
-    ["title" => "Exercice 3", "link" => "exercice3.php", "type" => "code", "atelier" => "2"],
-    ["title" => "Rapport Exercice 3", "link" => "Rapport Exercice3.pdf", "type" => "pdf", "atelier" => "2"],
-
-    ["title" => "Exercice 4", "link" => "exercice4.php", "type" => "code", "atelier" => "2"],
-    ["title" => "Rapport Exercice 4", "link" => "Rapport Exercice4.pdf", "type" => "pdf", "atelier" => "2"],
-    
-    ["title" => "Exercice 5", "link" => "exercice5.php", "type" => "code", "atelier" => "2"],
-    ["title" => "Rapport Exercice 5", "link" => "Rapport Exercice5.pdf", "type" => "pdf", "atelier" => "2"],
-
-    ["title" => "Exercice 6", "link" => "exercice6.php", "type" => "code", "atelier" => "2"],
-    ["title" => "Rapport Exercice 6", "link" => "Rapport Exercice6.pdf", "type" => "pdf", "atelier" => "2"]
+$skills = [
+    "HTML" => "98%", "CSS" => "75%", "Photoshop" => "67%",
+    "JS" => "45%", "PHP" => "30%", "Python" => "69%"
 ];
 ?>
 
@@ -63,362 +33,310 @@ $projects = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aya | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    
+    <title>Aya Portfolio</title>
     <style>
         :root {
-            --primary: #5d4037; /* Deep Brown */
-            --accent: #8d6e63;
-            --bg: #faf9f6; /* Soft Off-White */
-            --card-bg: #ffffff;
-            --text: #2d2d2d;
+            --bg-dark: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --accent-purple: #8a2be2;
+            --text-white: #ffffff;
+            --text-gray: #b0b0b0;
+            --pdf-red: #7c3ea0;
         }
 
         body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
             margin: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
-        /* HEADER */
-        header {
-            text-align: center;
-            padding: 80px 20px 40px;
-        }
-
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            color: var(--primary);
-            margin-bottom: 10px;
-            letter-spacing: -1px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 300;
-        }
-
-        /* FILTER BUTTONS */
-        .filters {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .filter-btn {
-            background: none;
-            border: 1px solid #ddd;
-            padding: 10px 25px;
-            margin: 0 5px;
-            cursor: pointer;
-            border-radius: 30px;
-            font-family: 'Inter', sans-serif;
-            transition: 0.3s all ease;
-            color: var(--text);
-        }
-
-        .filter-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-            box-shadow: 0 4px 15px rgba(93, 64, 55, 0.2);
-        }
-
-        /* GRID SYSTEM */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 0 40px 80px;
-        }
-
-        /* CARD DESIGN */
-        .card {
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 30px;
-            text-align: left;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.02);
-            display: block; /* Hidden by default via JS if needed */
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-        }
-
-        .card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-            color: var(--primary);
-            font-family: 'Playfair Display', serif;
-        }
-
-        /* BUTTONS INSIDE CARDS */
-        .card a {
-            display: inline-flex;
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
+            padding: 20px 8%;
+            background-color: #000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .logo span { color: var(--accent-purple); }
+
+        nav ul { list-style: none; display: flex; gap: 10px; margin: 0; align-items: center; }
+        nav ul li a { 
+            text-decoration: none; 
+            color: var(--text-white); 
+            padding: 8px 15px;
+            transition: 0.3s;
+            border-radius: 4px;
+        }
+
+        nav ul li a.active {
+            background-color: white;
+            color: var(--accent-purple);
+        }
+
+        .lang-btn {
+            background: var(--accent-purple);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* Hero */
+        #home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            min-height: 70vh;
+        }
+
+        .hero-content { max-width: 600px; }
+        .hero-content h1 { font-size: 3.5rem; margin: 0; }
+        .hero-content h2 { color: var(--accent-purple); font-size: 1.8rem; margin: 10px 0; }
+        .hero-content p { color: var(--text-gray); margin-bottom: 30px; }
+
+        .btn-primary {
+            background-color: var(--accent-purple);
+            color: white;
+            padding: 12px 25px;
             text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* Skills */
+        section { padding: 60px 10%; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+        .skills-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; }
+        .skill-item { text-align: center; width: 100px; }
+        .circle {
+            width: 80px; height: 80px;
+            border: 4px solid var(--accent-purple);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Projects Area */
+        #projects-area { display: none; background: #141414; }
+        .cat-cards-container { display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; }
+        .cat-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            width: 250px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            border: 2px solid transparent;
+        }
+        .cat-card:hover { border-color: var(--accent-purple); transform: scale(1.05); }
+
+        /* Items Grid & New Card Design */
+        #workshops-list, #real-projects-list { display: none; }
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .item-box {
+            background: #222;
+            padding: 25px;
             border-radius: 12px;
+            border-top: 4px solid var(--accent-purple);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .item-box h4 { margin: 10px 0; font-size: 1.2rem; }
+        .item-box .atelier-tag { 
+            color: var(--accent-purple); 
+            font-size: 0.75rem; 
+            font-weight: 800; 
+            text-transform: uppercase;
+        }
+
+        .btn-group { display: flex; gap: 10px; margin-top: 20px; }
+        .btn-link {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.85rem;
+            border-radius: 6px;
+            font-weight: 600;
             transition: 0.3s;
         }
+        .btn-code { background: #333; color: white; }
+        .btn-code:hover { background: #444; }
+        .btn-pdf { background: var(--pdf-red); color: white; }
+        .btn-pdf:hover { opacity: 0.8; }
 
-        .btn-code {
-            background: var(--primary);
-            color: white;
-        }
-
-        .btn-pdf {
-            background: #f0f0f0;
-            color: var(--primary);
-            margin-left: 5px;
-        }
-
-        .card a:hover {
-            opacity: 0.9;
-            letter-spacing: 0.5px;
-        }
-
-        /* ANIMATION */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .fade-in {
-            animation: fadeIn 0.5s ease forwards;
-        }
-        .profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 15px;
-    border: 3px solid var(--primary);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-.skills {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.skills h2 {
-    font-family: 'Playfair Display', serif;
-    color: var(--primary);
-    margin-bottom: 40px;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-}
-
-.skill {
-    text-align: center;
-}
-
-.circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: conic-gradient(var(--primary) 0deg, #eee 0deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.circle span {
-    position: absolute;
-    font-weight: bold;
-    color: var(--primary);
-}
-
-.circle::before {
-    content: "";
-    width: 90px;
-    height: 90px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-}
-
-
-.contact {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.contact h2 {
-    font-family: 'Playfair Display', serif;
-    color: var(--primary);
-    margin-bottom: 20px;
-}
-
-.contact-btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.whatsapp {
-    background: #5d4037;
-    color: white;
-}
-
-.gmail {
-    background: #5d4037;
-    color: white;
-}
-
-.contact-btn:hover {
-    transform: translateY(-3px);
-    opacity: 0.9;
-}
+        /* Footer & Contact */
+        .contact { text-align: center; }
+        .social-icons img { width: 35px; margin: 10px; filter: invert(1); }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Aya Portfolio</h1>
-    <img src="/profile.png" alt="Aya" class="profile-img">
-    <p>IT Student & Developer</p>
-    
-</header>
+    <nav>
+        <div class="logo">Aya <span>portfolio</span></div>
+        <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects-area" id="projects-nav" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><button class="lang-btn" onclick="toggleLanguage()">FR / EN</button></li>
+        </ul>
+    </nav>
 
-<div class="filters">
-    <button class="filter-btn active" onclick="filterAtelier('all')">Tout</button>
-    <button class="filter-btn" onclick="filterAtelier('1')">Atelier 1</button>
-    <button class="filter-btn" onclick="filterAtelier('2')">Atelier 2</button>
-</div>
-
-<div class="container" id="projectGrid">
-    <?php foreach($projects as $project): ?>
-        <div class="card project-card fade-in" data-atelier="<?php echo $project['atelier']; ?>">
-            <h3><?php echo htmlspecialchars($project['title']); ?></h3>
-            <a href="<?php echo $project['link']; ?>" 
-               class="<?php echo ($project['type'] === 'pdf') ? 'btn-pdf' : 'btn-code'; ?>"
-               <?php echo ($project['type'] === 'pdf') ? 'target="_blank"' : ''; ?>>
-               <?php echo ($project['type'] === 'pdf') ? '📄 Lire le Rapport' : '💻 Voir l\'exercice'; ?>
-            </a>
+    <section id="home">
+        <div class="hero-content">
+            <h1 id="hero-title">Aya Frijo</h1>
+            <h2 id="hero-subtitle">IT Student & Developer</h2>
+            <p id="hero-desc">I’m Aya, an IT student at ISMONTIC Tangier. I am passionate about learning web application development technologies and build modern user-friendly solutions.</p>
+            <button class="btn-primary" onclick="revealProjects()" id="btn-view">View my projects</button>
         </div>
-    <?php endforeach; ?>
-</div>
-<section class="skills">
-    <h2>My Skills</h2>
-    <div class="skills-container">
+        <div class="hero-image">
+            <img src="your-photo.jpg" alt="Aya Frijo" style="width: 320px; border-radius: 20px;">
+        </div>
+    </section>
 
-        <div class="skill">
-            <div class="circle" data-percent="98">
-                <span>98%</span>
+    <section id="skills">
+        <h3 class="section-title" id="skills-title">MY SKILLS</h3>
+        <div class="skills-grid">
+            <?php foreach($skills as $name => $percentage): ?>
+            <div class="skill-item">
+                <div class="circle"><?php echo $percentage; ?></div>
+                <p><?php echo $name; ?></p>
             </div>
-            <p>HTML</p>
+            <?php endforeach; ?>
         </div>
+    </section>
 
-        <div class="skill">
-            <div class="circle" data-percent="75">
-                <span>75%</span>
+    <section id="projects-area">
+        <h3 class="section-title" id="proj-area-title">MY WORK</h3>
+        
+        <div class="cat-cards-container">
+            <div class="cat-card" onclick="toggleCategory('workshops')">
+                <i>📁</i>
+                <h3 id="cat-workshops">Workshops</h3>
+                <p id="cat-workshops-p">Exercises & Tutorials</p>
             </div>
-            <p>CSS</p>
-        </div>
-
-        <div class="skill">
-            <div class="circle" data-percent="67">
-                <span>67%</span>
+            <div class="cat-card" onclick="toggleCategory('real-projects')">
+                <i>🚀</i>
+                <h3 id="cat-real">Projects</h3>
+                <p id="cat-real-p">Professional Applications</p>
             </div>
-            <p>Bootstrap</p>
         </div>
 
-        <div class="skill">
-            <div class="circle" data-percent="45">
-                <span>45%</span>
+        <div id="workshops-list">
+            <div class="items-grid">
+                <?php foreach($workshops as $w): ?>
+                <div class="item-box">
+                    <div>
+                        <span class="atelier-tag">Atelier <?php echo $w['atelier']; ?></span>
+                        <h4><?php echo $w['title']; ?></h4>
+                    </div>
+                    
+                    <div class="btn-group">
+                        <a href="<?php echo $w['code']; ?>" class="btn-link btn-code">Source Code</a>
+                        <a href="<?php echo $w['pdf']; ?>" class="btn-link btn-pdf">PDF Report</a>
+                    </div>
+                </div>
+                <?php endforeach; ?>
             </div>
-            <p>JavaScript</p>
         </div>
 
-        <div class="skill">
-            <div class="circle" data-percent="30">
-                <span>30%</span>
+        <div id="real-projects-list">
+            <div class="items-grid">
+                <div class="item-box">
+                    <span class="atelier-tag">Professional Project</span>
+                    <h4>E-commerce "Elys"</h4>
+                    <p style="font-size: 0.9rem; color: #aaa;">Full stack PHP platform with WhatsApp order integration.</p>
+                </div>
             </div>
-            <p>PHP</p>
         </div>
+    </section>
 
-        <div class="skill">
-            <div class="circle" data-percent="69">
-                <span>69%</span>
-            </div>
-            <p>Python</p>
+    <section class="contact" id="contact">
+        <h3 class="section-title" id="contact-title">CONTACT ME</h3>
+        <div class="social-icons">
+            <a href="#"><img src="/hd-purple-white-wa-whatsapp-logo-icon-png-701751695122983rg6i8mxdtt.png" alt="WA"></a>
+            <a href="#"><img src="download-linkedin-square-purple-icon-png-701751694974001rjxj2ew7jc.png" alt="linkdin"></a>
+            <a href="#"><img src="png-clipart-github-protocol-buffers-computer-software-repository-github-purple-violet.png" alt="github"></a>
+            <a href="#"><img src="12951026.png" alt="mail"></a>
         </div>
+    </section>
 
-    </div>
-</section>
+    <footer style="text-align: center; padding: 40px; color: #555;">
+        &copy; 2026 Aya Frijo Portfolio
+    </footer>
 
-<div class="contact">
-    <h2>Contact Me</h2>
-    
-    <a href="https://wa.me/212716470232" target="_blank" class="contact-btn whatsapp">
-        💬 WhatsApp
-    </a>
-
-    <a href="mailto:yoyoaya56367@gmail.com" class="contact-btn gmail">
-        📧 Gmail
-    </a>
-</div>
-
-
-
-<script>
-    function filterAtelier(atelier) {
-        const cards = document.querySelectorAll('.project-card');
-        const buttons = document.querySelectorAll('.filter-btn');
-
-        // Update active button
-        buttons.forEach(btn => {
-            btn.classList.remove('active');
-            if(btn.innerText.includes(atelier) || (atelier === 'all' && btn.innerText === 'Tout')) {
-                btn.classList.add('active');
+    <script>
+        let currentLang = 'EN';
+        const translations = {
+            'FR': {
+                'hero-subtitle': 'Étudiante en IT & Développeuse',
+                'hero-desc': 'Je suis Aya, étudiante à ISMONTIC Tanger. Passionnée par le développement d\'applications web.',
+                'btn-view': 'Voir mes projets',
+                'skills-title': 'MES COMPÉTENCES',
+                'proj-area-title': 'MON TRAVAIL',
+                'cat-workshops': 'Ateliers',
+                'cat-workshops-p': 'Exercices & TDs',
+                'cat-real': 'Projets',
+                'cat-real-p': 'Applications Professionnelles',
+                'contact-title': 'CONTACTEZ-MOI'
+            },
+            'EN': {
+                'hero-subtitle': 'IT Student & Developer',
+                'hero-desc': 'I’m Aya, an IT student at ISMONTIC Tangier. I am passionate about learning web application development.',
+                'btn-view': 'View my projects',
+                'skills-title': 'MY SKILLS',
+                'proj-area-title': 'MY WORK',
+                'cat-workshops': 'Workshops',
+                'cat-workshops-p': 'Exercises & Tutorials',
+                'cat-real': 'Projects',
+                'cat-real-p': 'Professional Applications',
+                'contact-title': 'CONTACT ME'
             }
-        });
+        };
 
-        // Filter cards
-        cards.forEach(card => {
-            card.style.display = 'none'; // Hide all
-            if (atelier === 'all' || card.getAttribute('data-atelier') === atelier) {
-                card.style.display = 'block'; // Show matched
-                card.classList.remove('fade-in');
-                void card.offsetWidth; // Trigger reflow for animation
-                card.classList.add('fade-in');
+        function toggleLanguage() {
+            currentLang = currentLang === 'EN' ? 'FR' : 'EN';
+            for (let id in translations[currentLang]) {
+                const el = document.getElementById(id);
+                if(el) el.innerText = translations[currentLang][id];
             }
-        });
-        // Skills circle animation
+        }
 
-    }
-    document.querySelectorAll('.circle').forEach(circle => {
-    let percent = circle.getAttribute('data-percent');
-    let degree = (percent / 100) * 360;
-    circle.style.background = `conic-gradient(#5d4037 ${degree}deg, #eee ${degree}deg)`;
-});
-</script>
+        function revealProjects() {
+            const area = document.getElementById('projects-area');
+            area.style.display = 'block';
+            location.href = '#projects-area';
+            document.getElementById('projects-nav').classList.add('active');
+        }
 
+        function toggleCategory(cat) {
+            document.getElementById('workshops-list').style.display = (cat === 'workshops') ? 'block' : 'none';
+            document.getElementById('real-projects-list').style.display = (cat === 'real-projects') ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
