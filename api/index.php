@@ -214,7 +214,7 @@ $skills = [
             <button class="btn-primary" onclick="revealProjects()" id="btn-view">View my projects</button>
         </div>
         <div class="hero-image">
-            <img src="profile.png" alt="Aya Frijo" style="width: 320px; border-radius: 20px;">
+            <img src="profile.png" alt="Aya Frijo" style="width: 320px; border-radius: 20px; border-radius:60px box-shadow:0 0 20px #7c3ea0">
         </div>
     </section>
 
