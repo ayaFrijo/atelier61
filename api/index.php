@@ -19,7 +19,9 @@ $workshops = [
     ["title" => "Exercice 3", "atelier" => "2", "code" => "exercice3.php", "pdf" => "Rapport Exercice3.pdf"],
     ["title" => "Exercice 4", "atelier" => "2", "code" => "exercice4.php", "pdf" => "Rapport Exercice4.pdf"],
     ["title" => "Exercice 5", "atelier" => "2", "code" => "exercice5.php", "pdf" => "Rapport Exercice5.pdf"],
-    ["title" => "Exercice 6", "atelier" => "2", "code" => "exercice6.php", "pdf" => "Rapport Exercice6.pdf"]
+    ["title" => "Exercice 6", "atelier" => "2", "code" => "exercice6.php", "pdf" => "Rapport Exercice6.pdf"],
+    ["title" => "Exercice 7", "atelier" => "3", "code" => "acc.php", "pdf" => "Rapport Exercice7.pdf"]
+
 ];
 
 $skills = [
