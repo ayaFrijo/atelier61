@@ -26,7 +26,7 @@ $workshops = [
 ];
 
 $skills = [
-    "HTML" => "98%", "CSS" => "75%", "Photoshop" => "67%",
+    "HTML" => "98%", "CSS" => "75%", "Bootstrap" => "67%",
     "JS" => "45%", "PHP" => "30%", "Python" => "69%"
 ];
 ?>
