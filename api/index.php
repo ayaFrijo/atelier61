@@ -18,10 +18,10 @@ $workshops = [
     ["title" => "TD 13", "atelier" => "1", "code" => "td13_Atelier1.php", "pdf" => "Rapport TD13.pdf"],
     ["title" => "Exercice 3", "atelier" => "2", "code" => "exercice3.php", "pdf" => "Rapport Exercice3.pdf"],
     ["title" => "Exercice 4", "atelier" => "2", "code" => "exercice4.php", "pdf" => "Rapport Exercice4.pdf"],
-    ["title" => "Exercice 5", "atelier" => "2", "code" => "exercice5.php", "pdf" => "Rapport Exercice5.pdf"],
-    ["title" => "Exercice 6", "atelier" => "2", "code" => "exercice6.php", "pdf" => "Rapport Exercice6.pdf"],
-    ["title" => "Exercice 7", "atelier" => "3", "code" => "https://github.com/ayaFrijo/atelier-4.git", "pdf" => "Rapport Exercice7.pdf"],
-    ["title" => "Exercice 8", "atelier" => "4", "code" => "https://github.com/ayaFrijo/atelier5.git", "pdf" => "Rapport Exercice8.pdf"]
+    ["title" => "Exercice 5", "atelier" => "3", "code" => "exercice5.php", "pdf" => "Rapport Exercice5.pdf"],
+    ["title" => "Exercice 6", "atelier" => "3", "code" => "exercice6.php", "pdf" => "Rapport Exercice6.pdf"],
+    ["title" => "Exercice 7", "atelier" => "4", "code" => "https://github.com/ayaFrijo/atelier-4.git", "pdf" => "Rapport Exercice7.pdf"],
+    ["title" => "Exercice 8", "atelier" => "5", "code" => "https://github.com/ayaFrijo/atelier5.git", "pdf" => "Rapport Exercice8.pdf"]
 
 ];
 
