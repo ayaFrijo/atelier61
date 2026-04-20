@@ -289,7 +289,7 @@ $skills = [
         <div class="social-icons">
             <a href="#"><img src="/hd-purple-white-wa-whatsapp-logo-icon-png-701751695122983rg6i8mxdtt.png" alt="WA"></a>
             <a href="#"><img src="download-linkedin-square-purple-icon-png-701751694974001rjxj2ew7jc.png" alt="linkdin"></a>
-            <a href="#"><img src="png-clipart-github-protocol-buffers-computer-software-repository-github-purple-violet.png" alt="github"></a>
+            <a href="#"><img src="github.png" alt="github"></a>
             <a href="#"><img src="12951026.png" alt="mail"></a>
         </div>
     </section>
