@@ -23,10 +23,10 @@ $workshops = [
     ["title" => "Exercice 7", "atelier" => "4", "code" => "https://github.com/ayaFrijo/atelier-4.git", "pdf" => "Rapport Exercice7.pdf"],
     ["title" => "Exercice 8", "atelier" => "5", "code" => "https://github.com/ayaFrijo/atelier5.git", "pdf" => "Rapport Exercice8.pdf"],
     ["title" => "Exercice 9", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice9.pdf"],
-    ["title" => "Exercice 10", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier62.git", "pdf" => "Rapport Exercice10.pdf"],
-    ["title" => "Exercice 11", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier63.git", "pdf" => "Rapport Exercice11.pdf"],
-    ["title" => "Exercice 12", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier64.git", "pdf" => "Rapport Exercice12.pdf"],
-    ["title" => "Exercice 13", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier65.git", "pdf" => "Rapport Exercice13.pdf"]
+    ["title" => "Exercice 10", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice10.pdf"],
+    ["title" => "Exercice 11", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice11.pdf"],
+    ["title" => "Exercice 12", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice12.pdf"],
+    ["title" => "Exercice 13", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice13.pdf"]
 
 
 ];
