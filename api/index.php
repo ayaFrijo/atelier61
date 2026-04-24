@@ -26,7 +26,8 @@ $workshops = [
     ["title" => "Exercice 10", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice101.pdf"],
     ["title" => "Exercice 11", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice111.pdf"],
     ["title" => "Exercice 12", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice121.pdf"],
-    ["title" => "Exercice 13", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice131.pdf"]
+    ["title" => "Exercice 13", "atelier" => "6", "code" => "https://github.com/ayaFrijo/atelier61.git", "pdf" => "Rapport Exercice131.pdf"],
+    ["title" => "Exercice 14", "atelier" => "7", "code" => "https://github.com/ayaFrijo/atelier7.git", "pdf" => "Rapport Exercice141.pdf"]
 
 
 ];
